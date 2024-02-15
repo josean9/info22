@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JavaScript</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="java1.js"></script>
+
+</head>
+<body>
+<div id="contenido">
+    <h1 id="titulo">Título de la Página</h1>
+    <p id="descripcion">Descripción inicial de la página.</p>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" oninput="localTodo()"><br><br>
+        <div id="errorNombre" class="error-message"></div>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" oninput="localTodo()"><br><br>
+        <div id="errorEdad" class="error-message"></div>
+
+        <input type="button" value="Enviar" onclick= "validarFormulario()">
+    </form>
+    <form>
+        <label>Ingresa un nuevo nombre para la página:</label>
+        <input type="text" id="nombreInput">
+        <br><br>
+        <label>Ingresa un nuevo nombre para la página:</label>
+        <input type="text" id="descriInput">
+        <br><br>
+        <button type="button" onclick="cambiarTitulo()">Confirmar</button>
+    </form>
+</div>
+
+<p align="center">Accesos a la web:<div align="center" id="accesostexto">#</div></p>
+</body>
+</html>
